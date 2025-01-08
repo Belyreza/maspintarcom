@@ -39,16 +39,22 @@
             text-decoration: underline;
         }
 
-        .container {
-            text-align: center;
-            margin: 20px auto;
-            padding: 10px;
-        }
+	.container {
+    background: #f8f0c2;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%; /* Lebar default untuk desktop */
+    margin: 20px auto;
+}
 
-        .container img {
-            max-width: 100%;
-            height: auto;
-        }
+/* Media query untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Lebar 100% untuk ponsel */
+        margin: 10px 0; /* Mengurangi margin untuk ponsel */
+    }
+
+         
 
         .title {
             font-size: 2.5rem;
