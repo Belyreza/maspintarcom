@@ -3,139 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='icon' href='gameplay/images/favicon.ico' type='image/x-icon'/>
-    <title>Zombie running game</title>
-	<meta name="description" content="Zombie running game adalah game seru yang menguji refleks Anda! Dalam game ini, Anda harus menghindari zombie yang berlari ke arah Anda sambil mengumpulkan koin untuk skor tertinggi.">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3187181028540455"
-     crossorigin="anonymous"></script>
+    <title>Zombie Running Game</title>
+    <link rel="icon" href="gameplay/images/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Zombie running game adalah game seru yang menguji refleks Anda! Hindari zombie dan kumpulkan koin untuk skor tertinggi.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff9d9;
-            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
         }
 
         header {
-            background-color: #333;
-            padding: 10px 20px;
+            background-color: #222;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 20px;
         }
 
         header nav {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            gap: 20px;
+            margin-right: 20px;
         }
 
         header nav a {
-            text-decoration: none;
             color: white;
-            font-weight: bold;
-            margin: 5px 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
         }
 
         header nav a:hover {
-            text-decoration: underline;
+            color: #f39c12;
         }
 
-	.container {
-    background: #f8f0c2;
-    padding: 10px;
-    border-radius: 8px;
-    width: 50%; /* Lebar default untuk desktop */
-    margin: 20px auto;
-}
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-/* Media query untuk perangkat dengan lebar maksimum 768px */
-@media (max-width: 768px) {
-    .container {
-        width: 100%; /* Lebar 100% untuk ponsel */
-        margin: 10px 0; /* Mengurangi margin untuk ponsel */
-    }
-
-         
-
-        .title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: orange;
-            text-shadow: 2px 2px 3px #000;
+        .game-image img {
+            width: 100%;
+            border-radius: 10px;
         }
 
         .play-btn {
             display: inline-block;
-            background-color: orange;
+            background-color: #f39c12;
             color: white;
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             font-weight: bold;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-top: 20px;
-            cursor: pointer;
-            border: none;
             text-decoration: none;
-            transition: 0.3s ease;
+            transition: 0.3s;
         }
 
         .play-btn:hover {
-            background-color: darkorange;
+            background-color: #e67e22;
         }
 
-        .icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .icons img {
-            width: 60px;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            header nav {
-                justify-content: center;
-            }
-
-            .title {
-                font-size: 2rem;
-            }
-
-            .play-btn {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-
-            .icons img {
-                width: 50px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .title {
-                font-size: 1.8rem;
-            }
-
-            .play-btn {
-                font-size: 0.9rem;
-                padding: 8px 15px;
-            }
-
-            .icons img {
-                width: 40px;
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
             }
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="logo">Zombie Running Game</div>
         <nav>
             <a href="https://maspintar.com/">Home</a>
             <a href="https://maspintar.com/about.html">About</a>
@@ -144,13 +102,14 @@
             <a href="https://maspintar.com/contact.html">Contact</a>
         </nav>
     </header>
-  
-</script></center>
-<div class="container">
-        <center>
-	    <a href="https://maspintar.com/gameplay/" target="_blank"><img src="Zombie running game.png" width="100%"></a>
-	</center>
-</div>
     
+    <div class="container">
+        <div class="game-image">
+            <a href="https://maspintar.com/gameplay/" target="_blank">
+                <img src="Zombie running game.png" alt="Zombie Running Game">
+            </a>
+        </div>
+        <a href="https://maspintar.com/gameplay/" class="play-btn" target="_blank">Play Now</a>
+    </div>
 </body>
 </html>
